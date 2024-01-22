@@ -1,0 +1,9 @@
+Rancangan database broadcast
+
+1 buat database :
+	"use broadcast"
+2 buat collection
+	Siswa:
+	"db.createCollection('siswa')"
+	Broadcast:
+	"db.createCollection('broadcast')"

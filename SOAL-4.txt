@@ -1,0 +1,32 @@
+
+db.siswa.updateMany({
+    $set: {
+        kelas: "oracle 2"
+    }
+});
+
+db.siswa.updateMany({
+    _id: 2
+},{
+    $set: {
+        name_siswa: "fulan 2 new"
+    }
+});
+
+
+db.broadcast.updateMany({
+    _id: 3
+},{
+    $set: {
+        judul: "Pesan baru update",
+        pesan: "Pesan baru update"
+    }
+});
+
+db.broadcast.updateMany({
+    status: "pending"
+},{
+    $set: {
+        status: "dibaca"
+    }
+});

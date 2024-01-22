@@ -1,0 +1,12 @@
+
+	siswa :
+	db.siswa.find({})
+	db.siswa.find({
+		nama_siswa : "fulan 1"
+	})
+	
+	broadcast
+	db.broadcast.find({})
+	db.broadcast.find({
+		status : "dibaca"
+	})

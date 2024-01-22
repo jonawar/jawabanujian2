@@ -1,0 +1,70 @@
+
+	Siswa: 
+	db.siswa.insertMany([
+		{
+			_id: 1,
+			nama_siswa: "fulan 1",
+			kelas: "Oracle"
+		},
+		{
+			_id: 2,
+			nama_siswa: "fulan 2",
+			kelas: "Oracle"
+		},
+		{
+			_id: 3,
+			nama_siswa: "fulan 3",
+			kelas: "Oracle"
+		},
+		{
+			_id: 4,
+			nama_siswa: "fulan 4",
+			kelas: "Oracle"
+		}
+	]);
+	
+	Broadcast :
+	
+	db.broadcast.insertMany([
+		{
+			_id: 1,
+			nama_siswa: "fulan 1",
+			siswa_id: "1",
+			judul: "Pesan baru",
+			pesan: "Pesan baru",
+			status: "pending"
+		},
+		{
+			_id: 2,
+			nama_siswa: "fulan 2",
+			siswa_id: "2",
+			judul: "Pesan baru",
+			pesan: "Pesan baru",
+			status: "pending"
+		},
+		{
+			_id: 3,
+			nama_siswa: "fulan 3",
+			siswa_id: "3",
+			judul: "Pesan baru",
+			pesan: "Pesan baru",
+			status: "pending"
+		},
+		{
+			_id: 4,
+			nama_siswa: "fulan 4",
+			siswa_id: "4",
+			judul: "Pesan baru",
+			pesan: "Pesan baru",
+			status: "pending"
+		},
+		{
+			_id: 5,
+			nama_siswa: "fulan 1",
+			siswa_id: "1",
+			judul: "Pesan lama",
+			pesan: "Pesan lama",
+			status: "dibaca"
+		},
+	]);
+

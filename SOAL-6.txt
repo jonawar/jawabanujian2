@@ -1,0 +1,9 @@
+	siswa :
+	db.siswa.deleteOne({
+		_id: 4
+	});
+
+	broadcast :
+	db.broadcast.deleteOne({
+		_id: 4
+	});
