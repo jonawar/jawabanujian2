@@ -1,0 +1,6 @@
+db.contact.find({},{
+    "Nama": 1,
+    "noWa": 1
+}).sort({
+    "Nama": -1
+})

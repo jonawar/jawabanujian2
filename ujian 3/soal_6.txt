@@ -1,0 +1,20 @@
+db.contact.aggregate([
+    {
+      $group: {
+        _id: "$Umur",
+        jumlah: { $sum: 1 }
+      }
+    },
+    {
+      $project: {
+        _id: 0,
+        jumlah: 1,
+        usia: "$_id"
+      }
+    },
+    {
+      $sort: {
+        usia: 1
+      }  
+    }
+  ])
