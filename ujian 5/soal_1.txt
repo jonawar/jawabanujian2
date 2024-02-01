@@ -1,0 +1,56 @@
+mongo
+
+use admin
+
+db.createUser(
+    {
+        user: "mongo",
+        pwd: "mongo",
+        roles: [ 
+            "userAdminAnyDatabase",
+            "readWriteAnyDatabase" 
+        ]
+    }
+)
+
+exit
+//login ke mongo dengan admin
+mongo --username mongo --password mongo
+buat database baru dengan 
+use ujian5
+
+kemudian create user sesuai dengan role nya
+db.createUser(
+    {
+        user: "user1",
+        pwd: "password",
+        roles: [{
+            role: "read",
+	        db: "ujian5"
+        }
+        ]
+    }
+)
+
+db.createUser(
+    {
+        user: "user2",
+        pwd: "password",
+        roles: [{ 
+            role: "readWrite",
+	    db: "ujian5"
+        }]
+    }
+)
+
+
+db.createUser(
+    {
+        user: "user3",
+        pwd: "password",
+        roles: [{ 
+            role: "userAdmin",
+	    db: "ujian5"
+        }]
+    }
+)
