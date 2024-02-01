@@ -1,0 +1,4 @@
+db.message.createIndex({
+    date: 1,
+    notif: 1
+});

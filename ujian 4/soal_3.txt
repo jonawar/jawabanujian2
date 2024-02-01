@@ -1,0 +1,6 @@
+db.contact.createIndex({
+    Group: 1
+})
+db.contact.createIndex({
+    Nama: "text"
+})

@@ -1,0 +1,22 @@
+db.contact.aggregate([
+    {
+      $group: {
+        _id: {
+          ContainsAwan: {
+            $cond: {
+              if: { $regexMatch: { input: "$Nama", regex: "awan", options: "i" } },
+              then: "content awan",
+              else: "not content awan"
+            }
+          }
+        },
+        jumlah: { $sum: 1 }
+      }
+    },
+    {
+      $project: {
+        _id: "$_id.ContainsAwan",
+        jumlah: "$jumlah"
+      }
+    }
+  ])
