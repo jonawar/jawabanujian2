@@ -1,7 +1,7 @@
 login dengan admin
 mongo --username mongo --password mongo
 
-kemudian masuk ke database ujian5
-user ujian5
+kemudian masuk ke database notifikasi
+use notifikasi
 
 db.getUsers()

@@ -22,11 +22,22 @@ use ujian5
 kemudian create user sesuai dengan role nya
 db.createUser(
     {
+        user: "123123",
+        pwd: "password",
+        roles: [{ 
+            role: "userAdmin",
+	    db: "notifikasi"
+        }]
+    }
+)
+
+db.createUser(
+    {
         user: "user1",
         pwd: "password",
         roles: [{
             role: "read",
-	        db: "ujian5"
+	        db: "notifikasi"
         }
         ]
     }
@@ -38,19 +49,7 @@ db.createUser(
         pwd: "password",
         roles: [{ 
             role: "readWrite",
-	    db: "ujian5"
-        }]
-    }
-)
-
-
-db.createUser(
-    {
-        user: "user3",
-        pwd: "password",
-        roles: [{ 
-            role: "userAdmin",
-	    db: "ujian5"
+	    db: "notifikasi"
         }]
     }
 )
